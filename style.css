@@ -1,16 +1,24 @@
+
+body {
+    background-color: grey;
+}
+
 .container {
-    display: flex;
     flex-wrap: wrap;
+    display: flex;
     align-content: flex-start;
     border: 3px solid black;
-    height: 256px;
-    width: 256px;  
+    height: 529px;
+    width: 529px;
+    min-height: 529px;
+    min-width: 529px;
 }
 
 .square {
     box-sizing: border-box;
-    width: 16px;
-    height: 16px;
+    align-content: flex-start;
+    width: 23px;
+    height: 23px;
     border: 1px solid grey;
     background-color: whitesmoke;  
        
@@ -18,31 +26,23 @@
 
 .content {
     display: flex;
-    justify-content: center;;
-
-}
-
-h3 {
-    color: darkblue;
-    text-align: center;
-}
-
-.TextAndButton {
-    display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-left: 20px;
-    max-width: 200px;
-    max-height: 55px;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.text {
-     color: black;
-    background-color: whitesmoke;
-    border: 3px solid black;
-    padding-left: 2px;
-}
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+    border: 3px solid whitesmoke;
+    width: 450px;
+    padding: 10px;
 
+    
+}
 
 
 .button {
@@ -51,4 +51,9 @@ h3 {
     margin-top: 60px;
     font-weight: bold;
     border: 3px solid black;
+    color: whitesmoke;
+    background-color: black;
+    border: 3px solid whitesmoke;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
 }

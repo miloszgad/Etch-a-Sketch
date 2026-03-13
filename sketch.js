@@ -3,12 +3,13 @@ const container = document.querySelector(".container")
 
 
 function createSquare() {
-    for (let i = 0; i < 256; i++) {
+    for (let i = 0; i < 529; i++) {
     const square = document.createElement("div");
     square.classList.add("square");
     container.appendChild(square);
     }
 }
+
 createSquare()
 
 
@@ -38,8 +39,8 @@ function getRandomColor() {
      for (let i = 0; i < value * value; i++) {
       const square = document.createElement("div");
       square.classList.add("square");
-      square.style.height = 256 / value + "px";
-      square.style.width = 256 / value + "px";
+      square.style.height = 529 / value + "px";
+      square.style.width = 529 / value + "px";
       container.appendChild(square);
      }
      const squares = document.querySelectorAll(".square");
